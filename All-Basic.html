@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <script>
+        "use strict";//important so that you must have to write like let a=9; or var a=9; without let or var not allowed.
+        let a=54;
+        let b="This is string";
+        console.log(a);
+        console.log(b);
+        // let modeifiy nhi karne deta hai parr var karne deta hai.
+        const w=9;
+        // w=90;  HEre this is wrong because we can not modify a constant value as i do in w =90 of w=9
+
+
+        // Data types:-
+        // Number
+        // Objects
+        // Boolean  -  true or false
+        // String
+        // undefined
+        // null
+
+// FUNCTIONS:-
+        function hello(){
+            console.log("Hi Harry");
+        }
+// OBJECTS:-
+        let p={
+            // '1':2,  This type of writing gives error.
+            a:5,// we can give value like this key value pairs.
+            r:7,
+            fun: function herro(number) {
+                console.log("This ios the number "+ number);
+            },
+        };
+
+        console.log(w);
+
+      document.addEventListener("click",function click(){
+        console.log("Clicked");
+        alert("Hello");
+        let conf=confirm("Are you Sure?");
+        console.log(conf);
+        // Time :10:15
+        //https://www.youtube.com/watch?v=kFe-RRaOy48&list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt&index=4
+      }  )
+
+
+
+    //   for (let index = 0; index < array.length; index++) {
+    //     const element = array[index];
+        
+    //   }
+
+
+
+
+    let arr=[1,2,3,4,5,6,7,8,9,10];
+
+    // array.forEach(element => {
+        
+    // });
+
+
+//important concept of this.//------------------------
+    let mobj={
+        a:this,
+        myfun:function (number){
+            console.log(this);
+        }
+    }
+        
+    mobj.myfun();
+    console.log(mobj.a);
+
+
+    //-------------------------------------
+
+
+//Call Back:-----------
+//or call abck function.
+
+setTimeout(() => {
+    console.log("yaaaye")
+}, 3000);
+
+console.log("Mai neche wali script hun.");
+
+
+
+    </script>
+
+    <style>
+        h1{
+            padding-left: 35%;
+            padding-top: 40%;
+            text-shadow: 2px 2px 2px pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        You are the BEST...
+    </h1>
+</body>
+</html>
