@@ -61,7 +61,7 @@
 // // let newNum = num.slice(3)
 // // let newNum = num.slice(3, 5)
 // // console.log(newNum)
-
+// New file now updated to github.
 
 
 
